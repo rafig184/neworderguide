@@ -3,10 +3,17 @@
     border: 0px solid black;
     border-radius: 10px;
     margin: 50px;
-    background-color: lightgrey;
+    background-color: rgb(92, 190, 105);
 }
 
 .logo {
     padding: 5px;
 }
 
+.accordion {
+direction: rtl;
+}
+
+.accordion-body {
+    text-align: right;
+}
