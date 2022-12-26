@@ -1,9 +1,10 @@
-.box {
+.container {
     text-align: center;
     border: 0px solid black;
     border-radius: 10px;
-    margin: 50px;
+    margin-top: 20px;
     background-color: rgb(92, 190, 105);
+    padding-bottom: 10px;
 }
 
 .logo {
@@ -11,9 +12,14 @@
 }
 
 .accordion {
-direction: rtl;
+    direction: rtl;
 }
 
 .accordion-body {
     text-align: right;
 }
+
+.headline {
+    font-weight: 500;
+}
+

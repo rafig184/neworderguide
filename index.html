@@ -16,7 +16,7 @@
 
 <body>
 
-  <div class="box">
+  <div class="container">
     <img class="logo" src="/assets/img/NewOrderLogo.png" alt="logo">
     <h1>מדריך משתמש קופה ניו אורדר</h1>
     <h3>: שאלות נפוצות</h3>
@@ -26,7 +26,7 @@
         <h2 class="accordion-header" id="headingOne">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
             aria-expanded="true" aria-controls="collapseOne">
-            ספירת מלאי
+            <div class="headline">ספירת מלאי</div>
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
@@ -41,14 +41,14 @@
             <br>
             1. על מנת להתחיל ספירת המלאי יש ללחוץ על כפתור התחל ספירת מלאי.
             <br>
-            <img src="/assets/img/inventorycount/inventorycount.PNG" alt="inventorycount">
+            <img width="80%" src="/assets/img/inventorycount/inventorycount.PNG" alt="inventorycount">
             <br>
             <br>
             2. כדי לספור את המוצרים יש לסרוק את ברקוד המוצר (במידה וקיים) או לחלופין לעבור על רשימת המוצרים.
             <br>
             לאחר מכן יש להזין את הכמות בשורה שנפתחה בצד שמאל וללחוץ אישור ולהמשיך לפריט הבא.
             <br>
-            <img src="/assets/img/inventorycount/inventorycount2.PNG" alt="inventorycount2">
+            <img width="80%" src="/assets/img/inventorycount/inventorycount2.PNG" alt="inventorycount2">
             <br>
             <br>
             3. בסיום הספירה יש ללחוץ על הכפתור הירוק "סיים ספירת מלאי".
@@ -61,7 +61,7 @@
         <h2 class="accordion-header" id="headingTwo">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            כניסה והורדה מהמלאי
+            <div class="headline"> כניסה והורדה מהמלאי </div>
           </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -79,15 +79,22 @@
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            תקלת מכשיר סליקת אשראי EMV
+            <div class="headline"> תקלת מכשיר סליקת אשראי EMV </div>
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>
-              
-            </strong>
+            1. במידה והמכשיר אינו מגיב בזמן ניסיון ביצוע עסקת אשראי, יש לנסות לנתק את המכשיר מהחשמל ולחבר מחדש.
+            <br>
+            במידה ולאחר עליית המכשיר התקלה לא נפתרה יש לפנות לתמיכה למספר 074-7033940
+            <br><br>
+            2. במידה וכתוב על מסך המכשיר הודעת TAMPER, המכשיר ניזוק ככל הנראה מנפילה / מכה / נזקי מים / או נסיון פתיחה
+            של המכשיר.
+            <br>
+            במצב כזה אין אחריות על המכשיר ויש לפנות לתמיכה למספר 074-7033940
+            <br><br>
+            3. במידה ומתקבלת הודעת שגיאה במחשב "COM PORT NOT FOUND" יש לפנות לתמיכה במספר 074-7033940
           </div>
         </div>
       </div>
@@ -95,17 +102,37 @@
         <h2 class="accordion-header" id="headingFour">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            זיכויים וביטול מסמכים
+            <div class="headline"> זיכויים וביטול מסמכים </div>
           </button>
         </h2>
         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
+            <strong>על מנת לבצע ביטול או זיכוי עסקה יש לבצע את הפעולות הבאות :</strong>
+            <br>
+            1. יש ללחוץ על כפתור פעולות נוספות בחלק התחתון של המסך.
+            <br>
+            <img width="30%" src="/assets/img/refund/refund1.png" alt="refund1">
+            <br><br>
+            2. לאחר מכן יש ללחוץ על כפתור זיכויים / ביטול מסמכים.
+            <br>
+            <img width="30%" src="/assets/img/refund/refund2.png" alt="refund2">
+            <br><br>
+            3. לאחר מכן יפתח חלון עם כל העסקאות שניתן לבטל. יש לבחור את העסקה הרצויה וללחוץ על משוך לזיכוי.
+            <br>
+            <img width="80%" src="/assets/img/refund/refund3.png" alt="refund3">
+            <br><br>
+            4. לאחר מכן ינתנו לנו האפשרויות לביצוע הזיכוי:
+            <br>
+            מזומן, כרטיס אשראי, זיכוי לכרטיס לקוח ואפשרויות נוספות.
+            <br>
+            <img width="40%" src="/assets/img/refund/refund4.png" alt="refund4">
+            <br><br>
+            5. במידה ובחרתם אפשרויות נוספות יפתח חלון הזיכוי שבו יופיעו כל אופציות הזיכוי.
+            <br>
+            <img width="50%" src="/assets/img/refund/refund5.png" alt="refund5">
+            <br>
+
           </div>
         </div>
       </div>
@@ -113,7 +140,7 @@
         <h2 class="accordion-header" id="headingFive">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            איתור עסקאות לפי מס. כרטיס אשראי / סיריאלי של מכשיר
+            <div class="headline">איתור עסקאות לפי מס. כרטיס אשראי / סיריאלי של מכשיר</div>
           </button>
         </h2>
         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
@@ -122,8 +149,7 @@
             <strong class="strong">לחיצה על כפתור F5 במקלדת או לחלופין בתפריט העליון, לחיצה על תפריט קופה ואז לחיצה על
               איתור עסקאות.</strong>
             <br>
-            <img width="600px" src="/assets/img/findsales/findsales.PNG" alt="findsales">
-
+            <img width="80%" src="/assets/img/findsales/findsales.PNG" alt="findsales">
           </div>
         </div>
       </div>
@@ -131,17 +157,25 @@
         <h2 class="accordion-header" id="headingSix">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-            עדכון קרן קופה
+            <div class="headline"> עדכון קרן קופה </div>
           </button>
         </h2>
         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
+            1. על מנת לעדכן את סכום קרן הקופה יש ללחוץ בתפריט הקופה העליון על כפתור "סוף יום",
+            <br>
+            לאחר מכן על כפתור "עדכון קרן בקופה".
+            <br>
+            <img width="40%" src="/assets/img/cash/cash1.png" alt="cash">
+            <br>
+            <br>
+            2. לאחר מכן יש להכניס את הסכום הנכון
+            <br>
+            <img width="40%" src="/assets/img/cash/cash2.png" alt="cash2">
+            <br>
+            <strong>***חשוב לשים לב אם קיימת דרישה לסיסמת מנהל לפני הכנסת הסכום***</strong>
+            <br>
           </div>
         </div>
       </div>
@@ -149,21 +183,27 @@
         <h2 class="accordion-header" id="headingSeven">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-            עדכון נוכחות עובדים
+            <div class="headline"> עדכון נוכחות עובדים </div>
           </button>
         </h2>
         <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-            adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
+            1. על מנת לעדכן את שעות נוכחות העובדים יש ללחוץ בתפריט העליון על "עובדים" ולאחר מכן על עדכון שעות ידני"
+            <br>
+            <img width="40%" src="/assets/img/hours/hours1.png" alt="hours">
+            <br><br>
+            2. במסך זה ניתן להוסיף יום עבודה חדש במידה ולא עודכן כלל, לעדכן שעות של יום פתוח ואף למחוק יום עבודה שלם.
+            <br>
+            <img width="80%" src="/assets/img/hours/hours2.png" alt="hours2">
+            <br><br>
+            3. במידה ובחרתם בהוספה ידנית או עדכון שעות יפתח לכם המסך הבא בו תוכלו לעדכן את שעת הכניסה ושעת היציאה של
+            העובד
+            <br>
+            <img width="80%" src="/assets/img/hours/hours3.png" alt="hours3">
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
