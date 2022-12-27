@@ -45,7 +45,7 @@
             <br>
             1. על מנת להתחיל ספירת המלאי יש ללחוץ על כפתור התחל ספירת מלאי.
             <br>
-            <img width="80%" class="helperImg"  src="/assets/img/inventorycount/inventorycount.PNG" alt="ספירת מלאי">
+            <img width="80%" class="helperImg" src="/assets/img/inventorycount/inventorycount.PNG" alt="ספירת מלאי">
             <br>
             <br>
             2. כדי לספור את המוצרים יש לסרוק את ברקוד המוצר (במידה וקיים) או לחלופין לעבור על רשימת המוצרים.
@@ -83,21 +83,23 @@
             <br><br>
             3. לאחר מכן יפתח בו תצטרכו לבחור באיזה סניף תתבצע הפעולה (במידה ויש יותר מסניף אחד) (1).
             <br>
-            לאחר מכן יש לבחור האם אתם מבצעים רק עדכון של המלאי או האם קיבלתם סחורה חדשה מספק  (2)
+            לאחר מכן יש לבחור האם אתם מבצעים רק עדכון של המלאי או האם קיבלתם סחורה חדשה מספק (2)
             <br>
             במידה ואתם קולטים סחורה חדשה מספק יש לרשום את מספר התעודה, תאריך התעודה ואת הספק ממנו קיבלתם סחורה (3)
             <br> ולאחר מכן יש ללחוץ על הכפתור הירוק "התחל פעולה".
             <br>
             <img width="40%" class="helperImg" src="/assets/img/inventory/inventory3.png" alt="כניסה למלאי">
             <br><br>
-            4. לאחר מכן יפתח חלון הכניסה / הורדה מהמלאי. יש לבחור האם אתם רוצים להקים מוצר חדש שעדיין לא קיים במערכת (1), או לחפש מוצר קיים (2).
+            4. לאחר מכן יפתח חלון הכניסה / הורדה מהמלאי. יש לבחור האם אתם רוצים להקים מוצר חדש שעדיין לא קיים במערכת
+            (1), או לחפש מוצר קיים (2).
             <br>
             <img width="40%" class="helperImg" src="/assets/img/inventory/inventory4.png" alt="כניסה למלאי">
             <br><br>
-            5. לאחר בחירת המוצר יש להזין את כמות המוצר אותו אתם רוצים להכניס למלאי (1) 
+            5. לאחר בחירת המוצר יש להזין את כמות המוצר אותו אתם רוצים להכניס למלאי (1)
             <br> ולעדכן את מחיר העלות ומחיר המכירה במידת הצורך ולאחר מכן ללחוץ על כפתור "הוסף" (2).
             <br>
-            לאחר ביצוע פעולה זו המוצר יתווסף לרשימה ויהיה ניתן לעבור למוצר הבא. בסיום קליטת המוצרים יש ללחוץ על כפתור סיים פעולה (3) והמוצרים יכנסו למלאי.
+            לאחר ביצוע פעולה זו המוצר יתווסף לרשימה ויהיה ניתן לעבור למוצר הבא. בסיום קליטת המוצרים יש ללחוץ על כפתור
+            סיים פעולה (3) והמוצרים יכנסו למלאי.
             <br>
             <img width="40%" class="helperImg" src="/assets/img/inventory/inventory5.png" alt="כניסה למלאי">
           </div>
@@ -226,7 +228,7 @@
             <img width="60%" class="helperImg" src="/assets/img/hours/hours2.png" alt="עדכון נוכחות עובדים">
             <br><br>
             3. במידה ובחרתם בהוספה ידנית או עדכון שעות יפתח לכם המסך הבא בו תוכלו לעדכן את שעת הכניסה ושעת היציאה של
-            העובד
+            העובד.
             <br>
             <img width="60%" class="helperImg" src="/assets/img/hours/hours3.png" alt="עדכון נוכחות עובדים">
           </div>
@@ -237,7 +239,7 @@
 
   <script>
     // Get the modal
-    
+
     var modal = document.getElementById("myModal");
 
     var modalImg = document.getElementById("img01");
@@ -248,21 +250,21 @@
 
     for (let index = 0; index < helperImgs.length; index++) {
       const element = helperImgs[index];
-      element.onclick = function(){
+      element.onclick = function () {
         console.log("Test");
-      modal.style.display = "block";
-      modalImg.src = element.src;
-      captionText.innerHTML = this.alt;
-    }
+        modal.style.display = "block";
+        modalImg.src = element.src;
+        captionText.innerHTML = this.alt;
+      }
     }
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];   
+    var span = document.getElementsByClassName("close")[0];
     // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
+    span.onclick = function () {
       modal.style.display = "none";
     }
-    </script>
+  </script>
 </body>
 
 </html>
