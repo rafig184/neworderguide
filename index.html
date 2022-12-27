@@ -15,7 +15,11 @@
 </head>
 
 <body>
-
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
   <div class="container">
     <img class="logo" src="/assets/img/NewOrderLogo.png" alt="logo">
     <h1>מדריך משתמש קופה ניו אורדר</h1>
@@ -41,14 +45,14 @@
             <br>
             1. על מנת להתחיל ספירת המלאי יש ללחוץ על כפתור התחל ספירת מלאי.
             <br>
-            <img width="80%" src="/assets/img/inventorycount/inventorycount.PNG" alt="inventorycount">
+            <img width="80%" class="helperImg"  src="/assets/img/inventorycount/inventorycount.PNG" alt="ספירת מלאי">
             <br>
             <br>
             2. כדי לספור את המוצרים יש לסרוק את ברקוד המוצר (במידה וקיים) או לחלופין לעבור על רשימת המוצרים.
             <br>
             לאחר מכן יש להזין את הכמות בשורה שנפתחה בצד שמאל וללחוץ אישור ולהמשיך לפריט הבא.
             <br>
-            <img width="80%" src="/assets/img/inventorycount/inventorycount2.PNG" alt="inventorycount2">
+            <img width="80%" class="helperImg" src="/assets/img/inventorycount/inventorycount2.PNG" alt="ספירת מלאי">
             <br>
             <br>
             3. בסיום הספירה יש ללחוץ על הכפתור הירוק "סיים ספירת מלאי".
@@ -67,11 +71,35 @@
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
           data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
+            <strong>ביצוע פעולת כניסה ויציאה מהמלאי כמעט זהות, יש לבצע אותן באופן הבא :</strong>
+            <br>
+            1. יש ללחוץ בתפריט העליון על מלאי ואז על כניסה למלאי / הורדה מהמלאי בהתאם לפעולה שרוצים לבצע.
+            <br>
+            <img width="40%" class="helperImg" src="/assets/img/inventory/inventory1.png" alt="כניסה למלאי">
+            <br><br>
+            2. לאחר מכן יש לבחור מי העובד המבצע את הפעולה.
+            <br>
+            <img width="40%" class="helperImg" src="/assets/img/inventory/inventory2.png" alt="כניסה למלאי">
+            <br><br>
+            3. לאחר מכן יפתח בו תצטרכו לבחור באיזה סניף תתבצע הפעולה (במידה ויש יותר מסניף אחד) (1).
+            <br>
+            לאחר מכן יש לבחור האם אתם מבצעים רק עדכון של המלאי או האם קיבלתם סחורה חדשה מספק  (2)
+            <br>
+            במידה ואתם קולטים סחורה חדשה מספק יש לרשום את מספר התעודה, תאריך התעודה ואת הספק ממנו קיבלתם סחורה (3)
+            <br> ולאחר מכן יש ללחוץ על הכפתור הירוק "התחל פעולה".
+            <br>
+            <img width="40%" class="helperImg" src="/assets/img/inventory/inventory3.png" alt="כניסה למלאי">
+            <br><br>
+            4. לאחר מכן יפתח חלון הכניסה / הורדה מהמלאי. יש לבחור האם אתם רוצים להקים מוצר חדש שעדיין לא קיים במערכת (1), או לחפש מוצר קיים (2).
+            <br>
+            <img width="40%" class="helperImg" src="/assets/img/inventory/inventory4.png" alt="כניסה למלאי">
+            <br><br>
+            5. לאחר בחירת המוצר יש להזין את כמות המוצר אותו אתם רוצים להכניס למלאי (1) 
+            <br> ולעדכן את מחיר העלות ומחיר המכירה במידת הצורך ולאחר מכן ללחוץ על כפתור "הוסף" (2).
+            <br>
+            לאחר ביצוע פעולה זו המוצר יתווסף לרשימה ויהיה ניתן לעבור למוצר הבא. בסיום קליטת המוצרים יש ללחוץ על כפתור סיים פעולה (3) והמוצרים יכנסו למלאי.
+            <br>
+            <img width="40%" class="helperImg" src="/assets/img/inventory/inventory5.png" alt="כניסה למלאי">
           </div>
         </div>
       </div>
@@ -112,25 +140,25 @@
             <br>
             1. יש ללחוץ על כפתור פעולות נוספות בחלק התחתון של המסך.
             <br>
-            <img width="30%" src="/assets/img/refund/refund1.png" alt="refund1">
+            <img width="30%" class="helperImg" src="/assets/img/refund/refund1.png" alt="ביטול מסמכים">
             <br><br>
             2. לאחר מכן יש ללחוץ על כפתור זיכויים / ביטול מסמכים.
             <br>
-            <img width="30%" src="/assets/img/refund/refund2.png" alt="refund2">
+            <img width="30%" class="helperImg" src="/assets/img/refund/refund2.png" alt="ביטול מסמכים">
             <br><br>
             3. לאחר מכן יפתח חלון עם כל העסקאות שניתן לבטל. יש לבחור את העסקה הרצויה וללחוץ על משוך לזיכוי.
             <br>
-            <img width="80%" src="/assets/img/refund/refund3.png" alt="refund3">
+            <img width="60%" class="helperImg" src="/assets/img/refund/refund3.png" alt="ביטול מסמכים">
             <br><br>
             4. לאחר מכן ינתנו לנו האפשרויות לביצוע הזיכוי:
             <br>
             מזומן, כרטיס אשראי, זיכוי לכרטיס לקוח ואפשרויות נוספות.
             <br>
-            <img width="40%" src="/assets/img/refund/refund4.png" alt="refund4">
+            <img width="40%" class="helperImg" src="/assets/img/refund/refund4.png" alt="ביטול מסמכים">
             <br><br>
             5. במידה ובחרתם אפשרויות נוספות יפתח חלון הזיכוי שבו יופיעו כל אופציות הזיכוי.
             <br>
-            <img width="50%" src="/assets/img/refund/refund5.png" alt="refund5">
+            <img width="50%" class="helperImg" src="/assets/img/refund/refund5.png" alt="ביטול מסמכים">
             <br>
 
           </div>
@@ -149,7 +177,7 @@
             <strong class="strong">לחיצה על כפתור F5 במקלדת או לחלופין בתפריט העליון, לחיצה על תפריט קופה ואז לחיצה על
               איתור עסקאות.</strong>
             <br>
-            <img width="80%" src="/assets/img/findsales/findsales.PNG" alt="findsales">
+            <img width="80%" class="helperImg" src="/assets/img/findsales/findsales.PNG" alt="איתור עסקאות">
           </div>
         </div>
       </div>
@@ -167,12 +195,12 @@
             <br>
             לאחר מכן על כפתור "עדכון קרן בקופה".
             <br>
-            <img width="40%" src="/assets/img/cash/cash1.png" alt="cash">
+            <img width="40%" class="helperImg" src="/assets/img/cash/cash1.png" alt="עדכון קרן קופה">
             <br>
             <br>
             2. לאחר מכן יש להכניס את הסכום הנכון
             <br>
-            <img width="40%" src="/assets/img/cash/cash2.png" alt="cash2">
+            <img width="40%" class="helperImg" src="/assets/img/cash/cash2.png" alt="עדכון קרן קופה">
             <br>
             <strong>***חשוב לשים לב אם קיימת דרישה לסיסמת מנהל לפני הכנסת הסכום***</strong>
             <br>
@@ -191,22 +219,50 @@
           <div class="accordion-body">
             1. על מנת לעדכן את שעות נוכחות העובדים יש ללחוץ בתפריט העליון על "עובדים" ולאחר מכן על עדכון שעות ידני"
             <br>
-            <img width="40%" src="/assets/img/hours/hours1.png" alt="hours">
+            <img width="40%" class="helperImg" src="/assets/img/hours/hours1.png" alt="עדכון נוכחות עובדים">
             <br><br>
             2. במסך זה ניתן להוסיף יום עבודה חדש במידה ולא עודכן כלל, לעדכן שעות של יום פתוח ואף למחוק יום עבודה שלם.
             <br>
-            <img width="80%" src="/assets/img/hours/hours2.png" alt="hours2">
+            <img width="60%" class="helperImg" src="/assets/img/hours/hours2.png" alt="עדכון נוכחות עובדים">
             <br><br>
             3. במידה ובחרתם בהוספה ידנית או עדכון שעות יפתח לכם המסך הבא בו תוכלו לעדכן את שעת הכניסה ושעת היציאה של
             העובד
             <br>
-            <img width="80%" src="/assets/img/hours/hours3.png" alt="hours3">
+            <img width="60%" class="helperImg" src="/assets/img/hours/hours3.png" alt="עדכון נוכחות עובדים">
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <script>
+    // Get the modal
+    
+    var modal = document.getElementById("myModal");
+
+    var modalImg = document.getElementById("img01");
+
+    var captionText = document.getElementById("caption");
+
+    var helperImgs = document.getElementsByClassName("helperImg");
+
+    for (let index = 0; index < helperImgs.length; index++) {
+      const element = helperImgs[index];
+      element.onclick = function(){
+        console.log("Test");
+      modal.style.display = "block";
+      modalImg.src = element.src;
+      captionText.innerHTML = this.alt;
+    }
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];   
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
 </body>
 
 </html>
