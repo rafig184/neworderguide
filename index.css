@@ -1,3 +1,21 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: rgb(238, 238, 238);
+}
+
+h1 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
 .container {
     text-align: center;
     border: 0px solid black;
@@ -26,7 +44,7 @@
 .helperImg {
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;עןא
+    transition: 0.3s;
 }
 
 .helperImg:hover {
