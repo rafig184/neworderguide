@@ -33,6 +33,11 @@ h3 {
     direction: rtl;
 }
 
+.accordion-button::after {
+    margin-left:0!important;
+    margin-right:auto;
+  }
+
 .accordion-body {
     text-align: right;
 }
@@ -147,4 +152,8 @@ h3 {
     .modal-content {
         width: 100%;
     }
+}
+
+#acc-button {
+    
 }
